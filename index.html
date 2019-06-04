@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>National Parks Service</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>National Parks Finder</h1>
+
+        <form id="form">
+            <label for="searchTerm">Search term</label>
+            <input type="text" name="search-term" id="searchTerm" required>
+
+            <label for="maxResults">Maximum results to return</label>
+            <input type="number" name="maxResults" id="maxResults" placeholder="10">
+
+            <label for="maxResults">Comma separated list of states</label>
+            <input type="string" name="states" id="states" placeholder="10">
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p id="errorMessage" class="errorMssage"></p>
+        <section id="results" class="hidden">
+            <h2>Search results</h2>
+            <ul id="resultsList">
+            </ul>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
